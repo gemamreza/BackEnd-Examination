@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const movieController = require('./../2.controller/movieController')
+const movieController = require('../2.controller/controller')
 
 // movie
 router.get('/allmovies', movieController.getAllMovies)

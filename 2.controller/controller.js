@@ -1,4 +1,4 @@
-const db = require('./../1.database/index')
+const db = require('../1.database/index')
 
 module.exports = {
     getAllMovies : (req, res) => {
