@@ -98,5 +98,19 @@ module.exports = {
             if(err) throw err
             res.redirect('/movie/allmovcat')
         })
+    },
+    getMovieOption : (req, res) => {
+        var sql = `select id, nama from movies;`
+        db.query(sql, (err, result) => {
+            if(err) throw err
+            res.send(result)
+        })
+    },
+    getCatOption : (req, res) => {
+        var sql = `select * from categories;`
+        db.query(sql, (err, result) => {
+            if(err) throw err
+            res.send(result)
+        })
     }
 }

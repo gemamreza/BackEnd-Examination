@@ -17,6 +17,7 @@ router.delete('/deletecategory/:id', movieController.deleteCategory)
 router.get('/allmovcat', movieController.allMovCat)
 router.post('/addmovcat', movieController.addMovCat)
 router.delete('/deletemovcat/:id', movieController.deleteMovCat)
-
+router.get('/getmovoption', movieController.getMovieOption)
+router.get('/getcatoption', movieController.getCatOption)
 
 module.exports = router
